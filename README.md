@@ -1,21 +1,26 @@
-# alertas-monitoramento
+# ⚠️ alertas-monitoramento
 Projeto em Python para criação de alertas automatizados com conexão a banco de dados e envio de e-mails personalizados.
 
-## Breve Descrição
+---
+
+## 📌 Descrição Geral
 
 Este repositório contém a estrutura de um sistema modular para geração de alertas automatizados. O projeto foi desenvolvido com foco em **monitoramento de rotinas críticas**, oferecendo agendamento periódico, flexibilidade de parametrização e envio de relatórios por e-mail.
 
 A arquitetura permite a criação de múltiplos alertas com o **mesmo esqueleto de código**, bastando alterar os parâmetros específicos (query, destinatários, filtros, etc.).
 
-## Funcionalidade
+---
 
-- Conecta-se ao banco de dados para executar queries específicas
-- Permite o agendamento da execução em intervalos definidos
-- Processa os dados retornados e envia alertas formatados por e-mail
-- Estrutura flexível para replicar a lógica em múltiplos alertas sem duplicar código
-- Gera logs locais para rastreabilidade e análise de execução
+## ⚙️ Funcionalidades
 
-## Resenha do Projeto
+- 🌐 Conecta-se ao banco de dados para executar queries específicas
+- ⏱️ Permite o agendamento da execução em intervalos definidos
+- 📩 Processa os dados retornados e envia alertas formatados por e-mail
+- 🔁 Estrutura flexível para replicar a lógica em múltiplos alertas sem duplicar código
+
+---
+
+## 💡 Resenha do Projeto
 
 Desenvolvimento de um sistema automatizado de monitoramento utilizando Python, com foco em rotinas fiscais e operacionais. A ideia surgiu da necessidade de acompanhar e corrigir falhas em tempo hábil, como documentos fiscais que não foram processados corretamente.
 
@@ -27,33 +32,40 @@ O sistema foi aplicado com sucesso em diferentes cenários da empresa, como:
 - Detecção de falhas em integrações
 - Alertas de inconsistência em dados operacionais
 
-## Exemplo de Uso
+---
 
-- Cenário:
-    Criação de um alerta para identificar notas fiscais de entrada que deveriam ter sido manifestadas automaticamente, mas não foram.
+## 🚀 Exemplo de Uso
 
-- Etapas:
-    1. Criar um script Python utilizando a estrutura base do projeto.
-    2. Definir:
-        - Query de verificação
-        - Destinatários do alerta
-        - Mensagem de corpo e assunto do e-mail
-    3. Configurar a agenda de execução (ex: a cada 1 hora)
-    4. Aguardar o envio automático do alerta quando forem encontrados registros.
+**Cenário:**
+Criação de um alerta para identificar notas fiscais de entrada que deveriam ter sido manifestadas automaticamente, mas não foram.
 
-- Exemplo de outros alertas já criados:
-    - Alertas de monitoramento de notas fiscais com falha de manifestação
-    - Alertas de documentos sem vínculo esperado no sistema
-    - Alertas de dados pendentes de validação por parte do cliente
+### 🧭 Etapas:
+  1. Criar um script Python utilizando a estrutura base do projeto.
+  2. Definir:
+      - Query de verificação
+      - Destinatários do alerta
+      - Mensagem de corpo e assunto do e-mail
+  3. Configurar a agenda de execução (ex: a cada 1 hora)
+  4. Aguardar o envio automático do alerta quando forem encontrados registros.
 
-## Tecnologias Utilizadas
+Exemplo de outros alertas já criados:
+  - Alertas de monitoramento de notas fiscais com falha de manifestação
+  - Alertas de documentos sem vínculo esperado no sistema
+  - Alertas de dados pendentes de validação por parte do cliente
+ 
+---
+
+## 🪄 Tecnologias Utilizadas
 
 - Python
+- Pandas
 - SQL Server
 - smtplib / email.message
 - Agendadores com `schedule` ou tarefas do sistema operacional (ex: cron / agendador do Windows)
 
-## Destaques do Projeto
+---
+
+## ✅ Destaques do Projeto
 
 - Estrutura modular e reutilizável para criação de múltiplos alertas com base em uma única lógica
 - Conexão com banco de dados para execução de queries complexas com múltiplas regras de negócio
